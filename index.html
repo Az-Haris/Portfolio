@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Haris</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .font-noto-sans {
+        font-family: "Noto Sans", sans-serif;
+      }
+      .gradient-shadow {
+        position: relative;
+        transform: translate(0);
+        transform-style: preserve-3d;
+      }
+      .gradient-shadow:before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 300px;
+        transform: translate3d(0, 0, -1px);
+        background: conic-gradient(
+          from 90deg at 40% -25%,
+          #ffd700,
+          #f79d03,
+          #ee6907,
+          #e6390a,
+          #de0d0d,
+          #d61039,
+          #cf1261,
+          #c71585,
+          #cf1261,
+          #d61039,
+          #de0d0d,
+          #ee6907,
+          #f79d03,
+          #ffd700,
+          #ffd700,
+          #ffd700
+        );
+        filter: blur(20px);
+        
+      }
+    </style>
+  </head>
+  <body class="containeer font-noto-sans text-[#1D1D1F]">
+    <header class="py-5 border-b-2">
+      <nav class="flex justify-around items-center">
+        <h2 class="text-5xl font-black text-[#8a2be2]">
+          Ha<span class="text-red-500">r</span>is
+        </h2>
+        <div>
+          <a class="text-xl text-blue-950 p-4" href="index.html">Profile</a>
+          <a class="text-xl text-blue-950 p-4" href="about.html">About</a>
+          <a class="text-xl text-blue-950 p-4" href="projects.html">Projects</a>
+          <a class="text-xl text-blue-950 p-4" href="contact.html">Contact</a>
+        </div>
+        <a
+          class="text-xl text-blue-600"
+          href="https://www.fiverr.com/alim_haris/convert-figma-to-html-xd-to-html-psd-to-html-with-responsive"
+          target="_blank"
+          >Project Request ></a
+        >
+      </nav>
+    </header>
+    <main
+      class="h-[calc(100vh-102px)] flex flex-col justify-center items-center"
+    >
+      <div class="gradient-shadow">
+        <img class="rounded-full w-[200px]" src="./Assets/Haris1.jpg" alt="" />
+      </div>
+      <p class="text-3xl font-semibold mt-9">MD Alimuzzaman Haris</p>
+      <h1 class="text-7xl font-black text-[#1C1D25] mt-3 mb-8">The MERN Expert.</h1>
+      <a
+          class="text-xl text-blue-600"
+          href="https://www.fiverr.com/alim_haris/convert-figma-to-html-xd-to-html-psd-to-html-with-responsive"
+          target="_blank"
+          >Start a Project Request ></a
+        >
+    </main>
+  </body>
+</html>
